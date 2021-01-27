@@ -16,6 +16,7 @@ body {
 
 .profile-info {
     height: 100vh;
+    width:100%;
     float: left;
     padding: 0 10%;
     overflow: scroll;
