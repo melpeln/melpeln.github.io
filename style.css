@@ -174,7 +174,13 @@ body {
     box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
 }
 
-    
+.accomplishment {
+    height: 10%;
+}
+
+.accomplisment img {
+    width:10%;
+}
 
 @media only screen and (max-width:1300px)
 {
