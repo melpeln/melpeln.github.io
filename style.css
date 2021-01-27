@@ -65,12 +65,12 @@ body {
 
     .skill small {
         padding-top: 2%;
-        font-size:90%;
+        font-size:80%;
         display: block;
     }
 
     .skill p {
-        font-size:.8rem;
+        font-size:90%;
     }
 
 .project img {
