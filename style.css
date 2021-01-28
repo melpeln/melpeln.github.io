@@ -79,7 +79,7 @@ nav {
     }
 
     .profile-info h1 {
-        margin-top: 30%;
+        margin-top: 10%;
         margin-bottom: 6%;
         font-size: 2rem;
     }
@@ -213,6 +213,9 @@ nav {
     body{
         overflow-x:hidden !important;
         width:100%;
+    }
+    .profile-info h1 {
+        margin-top: 30%;
     }
     .nav-links {
         position: fixed;
