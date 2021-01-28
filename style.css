@@ -211,7 +211,6 @@ nav {
 @media only screen and (max-width:1300px)
 {
     body{
-        overflow: hidden!important;
         overflow-x:hidden !important;
         width:100%;
     }
