@@ -62,7 +62,8 @@ body {
 
     .skill img {
         margin-top: 10%;
-        width: 40%;
+        height: 40%;
+        width:auto;
     }
 
     .skill small {
@@ -204,11 +205,13 @@ body {
     .skill
     {
         width: 31%;
-        height: 13%;
+        height: auto%;
     }
     .skill img
     {
         margin: 2%;
+        height:30%;
+        width: auto;
     }
     .project img
     {
