@@ -9,6 +9,49 @@ body {
     background: #efefef ;
 }
 
+nav {
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    min-height:8vh;
+    background-color:white;
+}
+
+.logo {
+    color:deeppink;
+    text-transform: uppercase;
+    letter-spacing:5px;
+    font-size:20px;
+}
+
+.nav-links {
+    display:flex;
+    justify-content:space-around;
+    width:30%;
+}
+
+.nav-links li {
+    list-style:none;
+}
+
+.nav-links a {
+    color:deeppink;
+    text-decoration: none;
+    letter-spacing:3px;
+    font-weight:bold;
+    font-size:14px;
+}
+.burger {
+    display: none;
+    cursor:pointer;
+}
+.burger div {
+    width:25px;
+    height:2px;
+    background-color:deeppink;
+    margin:2px;
+    transition: all 0.3s ease;
+}
 
 .about {
     font-size: 1.3rem;
@@ -16,11 +59,9 @@ body {
 
 .profile-info {
     height: 100vh;
-    width:100%;
     float: left;
     padding: 0 10%;
     overflow: scroll;
-    overflow-x: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -84,39 +125,6 @@ body {
 
 .project project1 {
     text-align: center;
-}
-
-.form-box {
-    margin-top: 6%;
-}
-
-.input-group input {
-    width: 45%;
-    border: 0;
-    outline: none !important;
-    padding: 2%;
-    margin: 2%;
-    display: inline-block;
-    background: white;
-}
-
-.text-area textarea {
-    width: 95%;
-    border: 0;
-    outline: none !important;
-    padding: 2%;
-    margin: 2%;
-    background: white;
-}
-
-.submit-btn {
-    border: 0;
-    outline: none !important;
-    padding: 2% 4%;
-    margin: 2%;
-    background: #2ab0ff;
-    cursor: pointer;
-    color: white;
 }
 
 .contact img {
@@ -189,18 +197,40 @@ body {
     overflow-y: hidden;
 }
 
+
+
 @media only screen and (max-width:1300px)
 {
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color:white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width:50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity:0;
+    }
+    .burger {
+        display:block;
+    }
     .profile-info
     {
-        width:100%;
         padding-right: 5%;
         padding-left: 5%;
         overflow: inherit;
     }
     .profile-img
     {
-        width: 100%;
     }
     .skill
     {
@@ -249,4 +279,29 @@ body {
         width:49%;
         height:auto;
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-2px,4px);
+}
+.toggle .line2 {
+    opacity:0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-2px,-4px);
 }

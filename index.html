@@ -1,19 +1,79 @@
 <html>
 <head>
-    <title> Joel Chang Personal Website  </title>
+    <title> Home | Joel Chang  </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <h4>The Nav</h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
     <div class="profile-info">
-        <h1>Joel Chang</h1>
+        <h1>Hey, I'm Joel - A Computer Science student from Honduras </h1>
         <p class="about">
-            Third year Computer Science student at National Dong Hwa University. Solution-oriented and passionate about learning (anything).
+            I'm currently an undergraduate student based in Taiwan. Solution-oriented and passionate about learning (anything).
         </p>
         <div class="social-media">
             <img src="images/facebook-icon.png" />
             <img src="images/twitter-icon.png" />
             <img src="images/whatsapp-icon.png" />
+        </div>
+
+        <h2> Projects </h2>
+        <div class="project">
+            <p ="project1"><b>Project 1</b></p>
+            <img src="images/project1.jpg" />
+            <img src="images/project2.jpg" />
+            <img src="images/project3.jpg" />
+            <img src="images/project4.jpg" />
+            <div small>
+                This project consists of so and so and so.
+            </div>
+        </div>
+        <h2> Work experience </h2>
+        <div class="work-part">
+            <div class="work-experience">
+                <p><b>Teaching Assistant</b></p>
+            </div>
+            <div class="job">
+                <p><em>National Dong Hwa University 2020-</em></p>
+                <p>Assisted teachers in explaining fundamental programming concepts to Computer Science students.</p>
+            </div>
+            <div class="work-experience">
+                <p><b>Translator</b></p>
+            </div>
+            <div class="job">
+                <p><em>National Dong Hwa University 2020-</em></p>
+                <p>Assisted school administration in the translation of documents such as: regulations, expense and fee declaration and behavioral guidelines.</p>
+            </div>
+        </div>
+        <h2>Other accomplishments</h2>
+        <div class="accomplishment">
+            <h3>Lifting</h3>
+            <a href="https://youtu.be/Hm3XUvwAsDQ/"><img src="images/squat.png" /></a>
+            <a href="https://youtu.be/WZz8zjm9RAM/"><img src="images/deadlift.png" /></a>
+            <p>An avid lifter, proficient in powerlifting despite suffering of scoliosis and a torn ACL. Elite lifts in squats and deadlifts (higher than 96% of lifters of the same age and weight class). <small>Youtube links embedded in thumbnails.</small></p>
         </div>
         <h2> Skills </h2>
         <div class="skill">
@@ -51,62 +111,6 @@
                 6/10
             </small>
         </div>
-        <h2> Projects </h2>
-        <div class="project">
-            <p ="project1"><b>Project 1</b></p>
-            <img src="images/project1.jpg" />
-            <img src="images/project2.jpg" />
-            <img src="images/project3.jpg" />
-            <img src="images/project4.jpg" />
-            <div small>
-                This project consists of so and so and so.
-            </div>
-        </div>
-        <h2> Work experience </h2>
-        <div class="work-part">
-            <div class="work-experience">
-                <p><b>Teaching Assistant</b></p>
-            </div>
-            <div class="job">
-                <p><em>National Dong Hwa University 2020-</em></p>
-                <p>Assisted teachers in explaining fundamental programming concepts to Computer Science students.</p>
-            </div>
-            <div class="work-experience">
-                <p><b>Translator</b></p>
-            </div>
-            <div class="job">
-                <p><em>National Dong Hwa University 2020-</em></p>
-                <p>Assisted school administration in the translation of documents such as: regulations, expense and fee declaration and behavioral guidelines.</p>
-            </div>
-        </div>
-        <h2>Other accomplishments</h2>
-        <div class="accomplishment">
-            <h3>Lifting</h3>
-            <a href="https://youtu.be/Hm3XUvwAsDQ/"><img src="images/squat.png"/></a>
-            <a href="https://youtu.be/WZz8zjm9RAM/"><img src="images/deadlift.png"/></a>
-            <p>An avid lifter, proficient in powerlifting despite suffering of scoliosis and a torn ACL. Elite lifts in squats and deadlifts (higher than 96% of lifters of the same age and weight class). <small>Youtube links embedded in thumbnails.</small></p>
-        </div>
-        <div class="form-box">
-            <h2>Contact me</h2>
-            <form>
-                <div class="input-group">
-                    <input type="text" placeholder="First Name" />
-                    <input type="text" placeholder="Last Name" />
-                </div>
-                <div class="input-group">
-                    <input type="number" placeholder="Phone Number" />
-                    <input type="email" placeholder="Email" />
-                </div>
-                <div class="text-area">
-                    <textarea rows="4" placeholder="Your message"></textarea>
-                </div>
-                <div class="submit">
-                    <button type="submit" class="submit-btn">
-                        SEND MESSAGE
-                    </button>
-                </div>
-            </form>
-        </div>
         <div class="contact">
             <span><img src="images/gmail-icon.png" />jcchangg3@gmail.com</span>
             <span><img src="images/phone-icon.png" />+886 989 009 245</span>
@@ -114,6 +118,6 @@
         <p class="copyright">Designed by Joel Chang</p>
     </div>
 
-
+    <script src="app.js"></script>
 </body>
 </html>
