@@ -90,6 +90,13 @@ nav {
     margin-bottom: 2%;
 }
 
+.profile-info h3 {
+    width:100%;
+    margin-bottom:1%;
+    background-color:white;
+    padding:8px;
+}
+
 .skill {
     background-color: #fff;
     display: inline-block;
