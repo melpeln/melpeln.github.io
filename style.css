@@ -5,7 +5,9 @@
     font-family: Calibri, sans-serif !important;
     overflow-x:hidden;
 }
-
+html {
+    overflow-x:hidden;
+}
 body {
     background: #efefef ;
     width:100%;
