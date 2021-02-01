@@ -97,12 +97,16 @@ nav {
     background-color:white;
     padding:8px;
 }
-
+.sline {
+    display: flex;
+    height:30%;
+    width: 100%;
+    margin-bottom:5px;
+}
 .skill {
     background-color: #fff;
-    display: inline-block;
-    height:150px;
-    width: auto;
+    height:100%;
+    width: 30%;
     text-align: center;
     overflow-y: hidden;
     margin-left: auto;
@@ -111,9 +115,8 @@ nav {
 }
 
     .skill img {
-        
-        width: auto;
-        height: 50%;
+        width:60%;
+        height: auto;
     }
 
     .skill small {
@@ -306,15 +309,20 @@ nav {
         padding-left: 5%;
         overflow: inherit;
     }
+    .sline {
+        height:15%;
+    }
     .skill
     {
-        width:32%;
-        height: 25%;
+        max-width:30%;
+        height:auto;
     }
     .skill img
     {
-        margin: 7px;
-        
+        margin: 0px;
+        height:auto;
+        width:auto;
+        max-width:50%;
         max-height:50%;
     }
     span 
@@ -370,6 +378,9 @@ nav {
 
     .f4::after {
         font-size: 20px;
+    }
+    .accomplishment img {
+        padding:5px;
     }
 }
 
