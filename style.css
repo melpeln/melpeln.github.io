@@ -23,6 +23,7 @@ nav {
     align-items:center;
     min-height:8vh;
     background-color:white;
+    z-index:1;
 }
 
 .logo {
@@ -128,17 +129,66 @@ nav {
 .project{
     width:100%;
     padding:0px;
-    margin:auto;
+    margin:15px;
+    height:auto;
+    display:flex;
+    justify-content:space-around;
+    position:relative;
 }
-.project img {
-    width: 49%;
-    padding: 60px;
-    background-color: white;
+.image-container {
+    width:48%;
+    height:auto;
+    position:relative;
 }
 
-.project project1 {
-    text-align: center;
+.image-container img {
+    width:100%;
+    height:100%;
+    padding:100px;
+    background:white;
 }
+
+.fade::after {
+    content: '';
+    color: white;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    padding-left:5px;
+    padding-right:10px;
+    font-size:30px;
+    background: deeppink;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0 ;
+    transition: opacity 0.5s ease;
+}
+
+.fade:hover::after {
+    opacity: 0.8 ;
+}
+
+.f1::after {
+    content: 'Live video face recognition';
+}
+
+.f2::after {
+    content: 'Periodization algorithm for elite lifters';
+    font-size:23px;
+}
+
+.f3::after {
+    content: 'Campus simulator';
+}
+
+.f4::after {
+    content: 'Mod-dev for Rocket League';
+}
+
+
 
 .contact img {
     width: 4%;
@@ -222,8 +272,6 @@ nav {
     overflow-y: hidden;
 }
 
-
-
 @media only screen and (max-width:1300px)
 {
     body{
@@ -258,9 +306,6 @@ nav {
         padding-left: 5%;
         overflow: inherit;
     }
-    .profile-img
-    {
-    }
     .skill
     {
         width:32%;
@@ -285,7 +330,7 @@ nav {
     {
         width:100%;
         height: auto;
-        margin-top: 1%;
+        margin-top: 3%;
     }
     .job {
         width:100%;
@@ -294,13 +339,20 @@ nav {
         margin-top:1%;
     }
     .project {
-        padding:0;
-        width:100%;
+        margin:0;
     }
-    .project img {
-        padding:40px;
-        width:100%;
-        margin-bottom:10px;
+    .image-container {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin:1%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+        background: white;
     }
 }
 
