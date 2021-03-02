@@ -101,7 +101,8 @@ nav {
     display: flex;
     height:30%;
     width: 100%;
-    margin-bottom:5px;
+    margin-bottom:20px;
+    align-items:center;
 }
 .skill {
     background-color: #fff;
@@ -175,27 +176,27 @@ nav {
 }
 
 .f1::after {
-    content: 'Live video face recognition';
+    content: 'live video face recognition';
 }
 
 .f2::after {
-    content: 'Periodization algorithm for elite lifters';
+    content: 'periodization algorithm for elite lifters';
     font-size:23px;
 }
 
 .f3::after {
-    content: 'Campus simulator';
+    content: 'campus simulator';
 }
 
 .f4::after {
-    content: 'Mod-dev for Rocket League';
+    content: 'mod-dev for Rocket League';
 }
 
 
 
 .contact img {
     width: 4%;
-    margin: -1% 2%;
+    margin-right:5px;
 }
 
 .contact span {
