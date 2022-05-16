@@ -265,14 +265,6 @@ h2 {
     align-content:center;
 }
 
-.accomplishment a {
-    background-color: #fff;
-    display: inline-block;
-    width:49%;
-    height: auto;
-    overflow-y: hidden;
-}
-
 .accomplishment img
 {
     width:100%;
