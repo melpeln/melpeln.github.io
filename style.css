@@ -177,6 +177,12 @@ body {
     margin-bottom:4%;
 }
 
+h2 {
+    text-decoration-line: underline;
+    padding: 50px 0 10px;
+    font-size: xx-large;
+}
+
 .vercard {
     display: inline;
     float: left;
@@ -185,14 +191,33 @@ body {
     margin: 0 20px 20px 0;
     text-align: center;
 }
-
 .vercard > h3 {
+    text-align: center;
+}
+
+.vercard_wide {
+    display: inline;
+    float: left;
+    width: 30%;
+    background-color: white;
+    margin: 0 20px 20px 0;
+    text-align: center;
+}
+.vercard_wide > h3 {
     text-align: center;
 }
 
 #biosbmc {
     background-color: #501248;
     color: white;
+}
+#paperfolding {
+    background-color: black;
+    color: white;
+}
+#ndhuwebscraper {
+    background-color: #c8f7b1;
+    color: black;
 }
 #netapp_sdet {
     border-color: #0078c1;
@@ -220,11 +245,11 @@ body {
 }
 
 .work-experience {
-    padding: 20px;
+    padding: 30px;
 }
 
 .job {
-    padding: 20px;
+    padding: 0 20px 20px;
 }
 
 .thumbnail > img{
