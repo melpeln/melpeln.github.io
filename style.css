@@ -2,134 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Calibri, sans-serif !important;
-    overflow-x:hidden;
+    font-family: Oxygen, sans-serif !important;
+    
 }
 html {
     overflow-x:hidden;
 }
-.nav-links {
-    display:flex;
-    justify-content:space-around;
-    width:30%;
-}
-
-.nav-links li {
-    list-style:none;
-}
-
-.nav-links a {
-    color:deeppink;
-    text-decoration: none;
-    letter-spacing:3px;
-    font-weight:bold;
-    font-size:14px;
-}
-.burger {
-    display: none;
-    cursor:pointer;
-}
-.burger div {
-    width:25px;
-    height:2px;
-    background-color:deeppink;
-    margin:2px;
-    transition: all 0.3s ease;
-}
 
 body {
-    background: rgb(240, 240, 240);
+    background-image: url("images/betterstickerbomb.jpg");
     width:100%;
     overflow-x:hidden;
 }
 
-.about {
-    font-size: 1.3rem;
-}
 
 .profile-info {
-    width: 90%;
-    margin:auto;
-    padding: 50px;
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    padding: 60px;
+    margin: 30px;
+    width: auto;
+    background-color: white;
 }
 
-    .profile-info::-webkit-scrollbar {
-        width: 0px;
-    }
+.profile-info > h1 {
+    font-size: 60px;
+}
 
-.sline {
-    display: flex;
-    height:30%;
-    width: 100%;
-    margin-bottom:20px;
+.about {
+    font-size: 30px;
+}
+
+.projects{
+    margin: 0px 30px 30px;
+    background-color: white;
+}
+.work {
+    margin: 0 30px 30px;
+    background-color: white;
+}
+.github_logo{
+    max-width:50%;
+    margin: auto;
+}
+.stack_logo{
+    max-width: 80%;
+    margin: auto;
+}
+.accomplishment {
+    margin-right:auto;
+    margin-left:auto;
     align-items:center;
-}
-.project{
-    width:100%;
-    padding:0px;
-    margin:15px;
-    height:auto;
-    display:flex;
-    justify-content:space-around;
-    position:relative;
-}
-.image-container {
-    position:relative;
-}
-
-.image-container img {
-    width:300px;
-    height:300px;
-    padding:30px;
-    background:white;
-}
-
-.fade::after {
-    content: '';
-    color: white;
-    justify-content:center;
-    align-items:center;
-    display:flex;
-    padding-left:5px;
-    padding-right:10px;
-    font-size:30px;
-    background: deeppink;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0 ;
-    transition: opacity 0.5s ease;
-}
-
-.fade:hover::after {
-    opacity: 0.8 ;
-}
-
-.f1::after {
-    content: 'live video face recognition';
-}
-
-.f2::after {
-    content: 'periodization algorithm for elite lifters';
-    font-size:23px;
-}
-
-.f3::after {
-    content: 'campus simulator';
-}
-
-.f4::after {
-    content: 'mod-dev for Rocket League';
-}
-
-.bar {
-    display: inline;
-    float: left;
+    align-content:center;
+    padding: 30px;
+    margin: 30px;
+    background-color: #fefefeeb;
 }
 
 .contact img {
@@ -142,40 +70,46 @@ body {
 }
 
 .contact {
-    margin: 5% 0 5% 25%;
-    width: 85%;
-}
-
-.copyright {
-    text-align: center;
-    margin-bottom:4%;
+    background-color: black;
+    min-height: 30vh;
+    margin: 0 30px;
+    color: white;
+    padding: 50px;
 }
 
 h2 {
-    text-decoration-line: underline;
-    padding: 50px 0 10px;
+    padding: 30px 60px;
     font-size: xx-large;
+    background-color: white;
+    margin: 30px 30px 0;
+    box-shadow: 0 0 3px #ccc;
 }
 
 .vercard {
-    display: inline;
-    float: left;
+    display: inline-block;
     width: 20%;
+    vertical-align: top;
     background-color: white;
-    margin: 0 20px 20px 0;
+    margin: 0 0px 10px 0;
     text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
 }
 .vercard > h3 {
     text-align: center;
 }
 
 .vercard_wide {
-    display: inline;
-    float: left;
-    width: 30%;
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
     background-color: white;
-    margin: 0 20px 20px 0;
+    margin: 0 0px 10px 0;
     text-align: center;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
 }
 .vercard_wide > h3 {
     text-align: center;
@@ -186,12 +120,16 @@ h2 {
     color: white;
 }
 #paperfolding {
-    background-color: black;
+    background-color: rgb(5, 81, 82);
     color: white;
 }
 #ndhuwebscraper {
     background-color: #c8f7b1;
     color: black;
+}
+#data_ass {
+    background-color: #ff4500;
+    color: white;
 }
 #netapp_sdet {
     border-color: #0078c1;
@@ -217,27 +155,31 @@ h2 {
 #ndhu_translator {
     border-color: #006c3c;
 }
-
+#heavy_squats {
+    background-color: #b42e40;
+    color: white;
+}
+#heavy_deadlifts {
+    background-color: #56575f;
+    color: white;
+}
 .work-experience {
     padding: 30px;
 }
 
 .job {
-    padding: 0 20px 20px;
+    padding: 0 60px 20px;
 }
 
-.thumbnail > img{
+.vercard_wide > * > img {
     width: 100%;
-    padding: 30px;
+    padding: 30px 60px;
+}
+.vercard > * > img{
+    width: 60%;
+    padding: 10px;
 }
 
-.accomplishment {
-    width:100%;
-    margin-right:auto;
-    margin-left:auto;
-    align-items:center;
-    align-content:center;
-}
 
 .accomplishment img
 {
@@ -249,120 +191,87 @@ h2 {
     background-color:white;
 }
 
-.accomplishment p {
-    background-color: #fff;
-    display: flex;
-    width:100%;
-    height:auto;
-    padding:1rem;
-    font-size:1rem;
-    text-align: center;
-    overflow-y: hidden;
-}
-
 @media only screen and (max-width:1300px)
 {
     body{
         overflow-x:hidden !important;
         width:100%;
-        padding-top: 50px;
-    }
-    .profile-info h1 {
-        margin-top: 1%;
+        padding: 0;
+        margin: 0;
     }
     .profile-info
     {
-        padding: 0;
+        margin: 30px 0 30px 0;
+        padding: 10px;
         overflow: inherit;
-    }
-    .sline {
-        max-height:18%;
-    }
-    .skill
-    {
-        max-width:30%;
-        height:auto;
-    }
-    .skill img
-    {
-        margin: 0px;
-        height:auto;
-        width:auto;
-        max-width:50%;
-        max-height:50%;
+        width: 100%;
     }
     span 
     {
         display:block;
     }
     .projects {
-        margin:0;
-        min-height:20%;
-    }
-    .image-container {
+        margin:20px 0;
+        padding:0;
+        background-color: rgba(255, 255, 255, 0.684);
         width: 100%;
-        min-height:20%;
-        height: auto;
-        position: relative;
-        margin:1%;
     }
-
-    .image-container img {
+    .work {
+        margin: 20px 0;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0.684);
         width: 100%;
-        height: auto;
-        padding: 15px;
-        background: white;
     }
-
     .vercard {
-        display: inline;
-        float: left;
+        display: block;
+        float: center;
         width: 100%;
         background-color: white;
-        margin: 0;
         text-align: center;
     }
-    .vercard > h3 {
+    .vercard > .thumbnail {
+        margin: auto;
+        width: 100%;
+    }
+    .vercard > .job {
+        padding: 0 20px 20px;
+    }
+    .vercard > .thumbnail > img {
+        padding: 10px;
+        width: 30%;
+        height: auto;
+    }
+    .work-experience > h3 {
         text-align: center;
     }
 
     .vercard_wide {
-        display: inline;
-        float: left;
+        display: block;
+        float: center;
         width: 100%;
         background-color: white;
-        margin: 0 20px 20px 0;
         text-align: center;
     }
     .vercard_wide > h3 {
         text-align: center;
     }
+
+    .vercard_wide > .thumbnail > img{
+        width: 100%;
+        padding: 0 0 20px 0;
+    }
     .accomplishment img {
         padding:5px;
     }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
-@keyframes navLinkFade{
-    from{
-        opacity:0;
-        transform: translateX(50px);
+    
+    .contact {
+        background-color: black;
+        min-height: 10vh;
+        margin: 0 30px;
+        color: white;
+        padding: 50px;
     }
-    to{
-        opacity:1;
-        transform: translateX(0px);
+    .vercard > p {
+        padding-bottom: 10px;
     }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-2px,4px);
-}
-.toggle .line2 {
-    opacity:0;
-}
-.toggle .line3 {
-    transform: rotate(45deg) translate(-2px,-4px);
 }
