@@ -10,7 +10,6 @@ html {
 }
 
 body {
-    background-image: url("images/betterstickerbomb.jpg");
     width:100%;
     overflow-x:hidden;
 }
@@ -39,7 +38,7 @@ body {
     background-color: white;
 }
 .work {
-    margin: 0 30px 30px;
+    margin: 0 30px 60px;
     background-color: white;
 }
 .github_logo{
@@ -81,7 +80,7 @@ h2 {
     padding: 30px 60px;
     font-size: xx-large;
     background-color: white;
-    margin: 30px 30px 0;
+    margin: 30px 30px 10px;
     box-shadow: 0 0 3px #ccc;
 }
 
@@ -136,6 +135,13 @@ h2 {
 }
 #netapp_sdet_head {
     background-color: #0078c1;
+    color: white;
+}
+#lenovo_swe {
+    border-color: #e60012;
+}
+#lenovo_swe_head {
+    background-color: #e60012;
     color: white;
 }
 #ficus_swe {
@@ -209,6 +215,10 @@ h2 {
     span 
     {
         display:block;
+    }
+
+    h2 {
+        margin: 30px 0 10px;
     }
     .projects {
         margin:20px 0;
